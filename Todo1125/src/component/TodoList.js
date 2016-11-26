@@ -2,8 +2,8 @@ import React from 'react'
 
 class TodoList extends React.Component {
   handleChange(i){
-    // this.props.handleCompleted()
-    alert(i)
+    this.props.handleCompleted()
+    // alert(i)
   }
   render () {
 
