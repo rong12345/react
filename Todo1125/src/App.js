@@ -11,8 +11,10 @@ class App extends React.Component {
       ]
     }
   }
-  handleCompleted(){
-    alert('我是父组件方法')
+  handleCompleted(i){
+    // alert('我是父组件方法')
+    this.state.items[i].completed = !this.state.items[i].completed;
+    this.setState({items:this.state.items})
   }
   handleSubmit(e){
     e.preventDefault();
