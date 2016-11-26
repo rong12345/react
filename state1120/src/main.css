@@ -1,0 +1,42 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #F8BBD0;
+  width:50%;
+  width: 200px;
+  transition: all 0.5s ease-in;
+
+}
+.menu h3{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+}
+.menu p{
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+.anniu{
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.cover{
+   position: absolute;
+   top:0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: #000;
+   opacity: 0.5;
+ }
