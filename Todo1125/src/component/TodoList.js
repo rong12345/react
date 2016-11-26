@@ -2,8 +2,11 @@ import React from 'react'
 
 class TodoList extends React.Component {
   handleChange(i){
-    this.props.handleCompleted()
+    this.props.handleCompleted(i)
     // alert(i)
+  }
+  handleDelete(i){
+    this.props.handleDel(i);
   }
   render () {
 
@@ -13,7 +16,7 @@ class TodoList extends React.Component {
         onChange={this.handleChange.bind(this,index)} />
         <span style={item.completed ?
           {textDecoration:'line-through',opacity:'0.3'} : null}>{item.title}</span>
-        <button>删除</button>
+        <button  onClick={this.handleDelete.bind(this,index)}>删除</button>
       </div>
     )
     return(
